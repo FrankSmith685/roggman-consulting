@@ -1,0 +1,5 @@
+export const visadoTitulo = 'Visado';
+export const visadoTexto = `La solicitud de un visado de trabajo o de estudios para Alemania es uno de los procedimientos más importantes si desea comenzar su integración en el país de habla alemana. Alemania es una de las mayores potencias económicas de Europa. Ofrece muy buenas oportunidades salariales y se ha convertido en una excelente opción para quienes están decididos a cambiar su vida. Sin embargo, si desea establecerse correctamente en este país, debe hacer las cosas bien. Es importante que tenga toda la información sobre los documentos necesarios. ¡Cuente con nosotros!`;
+
+export const idiomaTitulo = 'Idioma';
+export const idiomaTexto = `Nuestras escuelas asociadas están situadas en las ciudades más hermosas e interesantes de Alemania, ricas en cultura e historia. Sus cursos de alemán le animarán y motivarán a aprender el idioma con facilidad y, al mismo tiempo, a experimentar intensamente esta cultura. Estaremos a su lado según su horario y disponibilidad.`;

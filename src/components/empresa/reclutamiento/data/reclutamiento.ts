@@ -1,0 +1,4 @@
+export const reclutamientoIntro = `Nos comprometemos en cada proceso de selección como si fuera nuestra propia empresa, enfocándonos en las personas y escuchándolas, ya sean candidatos o clientes. La consultoría y el reconocimiento de necesidades tienen un papel significativo.
+Además, gracias a nuestro propio servicio 'Selección de Onboarding', acompañamos y aseguramos la mejor integración posible de los candidatos en la empresa. Somos consultores de reclutamiento y coaches de integración.
+El proceso de onboarding no solo se enfoca en el seguimiento después de la selección, sino que acompaña el proceso desde el principio, siempre en línea con la misión y el objetivo de la empresa.
+Cada proceso de selección es único porque no hay dos personas o empresas iguales. Hay una solución para cada empresa, y nosotros en Sandra Roggero Consulting sabemos cómo encontrarla.`;

@@ -1,0 +1,4 @@
+export const busquedaIntro = `Las personas son el corazón de cada proyecto. La selección de empleados calificados es sin duda uno de los factores más importantes cuando se trata de alcanzar todos los objetivos de su empresa.
+Por lo tanto, la incorporación de perfiles profesionales que se ajusten a los valores y la misión de su empresa debe ser una de sus prioridades. Para atraer a los talentos más buscados y calificados, debe contar la historia única detrás de su empresa.
+Por eso es importante buscar el apoyo y la experiencia de una consultoría de personal especializada que sepa lo que realmente necesita y tenga una amplia red de profesionales que quieran realizar todo su potencial en una empresa como la suya.
+En Sandra Roggero Consulting, miramos más allá de la descripción del puesto para entender la historia que cuenta su empresa y lo conectamos con las personas adecuadas que lo ayudarán a transformar su empresa.`;

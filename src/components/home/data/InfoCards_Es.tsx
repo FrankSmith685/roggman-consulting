@@ -2,31 +2,29 @@
 
 import { InfoCard } from "@/interface/infoCards";
 
-
-
 export const infoCardsEs: InfoCard[] = [
   {
     title: "INNOVACIÓN",
     description:
-      "Hoy en día, se trata de más que solo 'encontrar' nuevos empleados rápidamente. Se trata de construir equipos de trabajo óptimos, compuestos por una organización estructurada de manera coherente con los objetivos de la empresa. Por eso, las empresas necesitan un socio que entienda el mercado y tenga experiencia práctica.",
+      "Impulsamos la innovación en cada proyecto, transformando ideas en soluciones prácticas que fortalecen el crecimiento sostenible de personas, empresas e instituciones.",
     image: "/images/info_01.png",
   },
   {
-    title: "COMPETENCIA EN RECLUTAMIENTO",
+    title: "EXPERIENCIA INTEGRAL",
     description:
-      "Evaluación exhaustiva de nuestros candidatos, para que nuestros clientes empresariales puedan formar equipos de trabajo óptimos, compuestos por jóvenes y/o adultos comprometidos, disciplinados y bien estructurados que correspondan a sus objetivos empresariales.",
+      "Nuestra experiencia abarca consultoría, asesoría y capacitación en diversas áreas: financieras, administrativas, legales, tecnológicas, educativas y empresariales. Cada servicio está diseñado para aportar valor real y estratégico.",
     image: "/images/info_02.png",
   },
   {
     title: "VISIÓN",
     description:
-      "Nuestro objetivo es crear equipos de alto rendimiento que logren los objetivos empresariales y contribuyan a una cultura laboral positiva e inclusiva.",
+      "Consolidarnos como aliados estratégicos en la formación, desarrollo y crecimiento de organizaciones y profesionales, promoviendo culturas inclusivas, eficientes y orientadas a la excelencia.",
     image: "/images/info_03.png",
   },
   {
-    title: "NUEVOS CAMINOS EN LA ADQUISICIÓN DE PERSONAL",
+    title: "NUEVOS HORIZONTES",
     description:
-      "Con ideas frescas y un compromiso apasionado, buscamos revolucionar el área de adquisición de personal.",
+      "Desde la consultoría hasta la capacitación especializada y la internacionalización de talentos, abrimos caminos hacia nuevas oportunidades que potencian la competitividad en un mundo globalizado.",
     image: "/images/info_04.png",
   },
 ];

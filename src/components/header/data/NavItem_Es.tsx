@@ -1,82 +1,94 @@
 // navItems.tsx
 import { NavItem } from "@/interface/navItem";
-import { FaLanguage } from "react-icons/fa";
 import {
   FiUsers,
-  FiBriefcase,
-  FiStar,
-  FiMail,
-  FiSettings,
-  FiShield,
-  FiGlobe,
-  FiCheckCircle,
-  FiHome,
   FiBookOpen,
   FiFileText,
+  FiGlobe,
+  FiSettings,
+  FiCheckCircle,
+  FiStar,
+  FiPhone,
+  FiMail,
   FiTrendingUp,
-  FiUserCheck,
-  FiMessageCircle,
-  FiUserPlus,
-  FiFlag
+  FiCalendar,
+  FiLayers,
+  FiMonitor,
+  FiShoppingCart,
 } from "react-icons/fi";
+import { FaLanguage, FaBalanceScale, FaMoneyBillWave } from "react-icons/fa";
+import { MdOutlineSchool } from "react-icons/md";
 
 export const navItems_Es: NavItem[] = [
   {
-    label: "Empresa",
-    href: "/empresa",
-    icon: <FiUsers />,
-    title: "Soluciones para Empresas",
-    description:
-      "Seleccionamos los profesionales que su empresa necesita y fomentamos nuevos estilos de liderazgo adaptados a los tiempos actuales.",
+    label: "Servicios",
+    href: "/servicios",
+    icon: <FiSettings />,
+    title: "Nuestros Servicios",
+    description: "Soluciones integrales de consultoría, formación, tecnología y comercio.",
     subItems: [
       {
-        label: "Selección y Reclutamiento de Personal",
-        href: "/empresa/reclutamiento",
-        icon: <FiUserPlus />,
+        label: "Asesoría y Consultoría",
+        href: "/servicios/asesoria-consultoria",
+        icon: <FaBalanceScale />,
       },
       {
-        label: "Evaluaciones de Personal",
-        href: "/empresa/evaluacion",
-        icon: <FiCheckCircle />,
+        label: "Capacitación y Formación",
+        href: "/servicios/capacitacion-formacion",
+        icon: <FiBookOpen />,
       },
       {
-        label: "Internacional",
-        href: "/empresa/internacional",
-        icon: <FiGlobe />,
+        label: "Traducción e Interpretación",
+        href: "/servicios/traduccion-interpretacion",
+        icon: <FaLanguage />,
       },
       {
-        label: "Funciones",
-        href: "/empresa/funciones",
-        icon: <FiTrendingUp />,
+        label: "Proyectos y Producción",
+        href: "/servicios/proyectos-produccion",
+        icon: <FiLayers />,
       },
       {
-        label: "Búsqueda Especializada",
-        href: "/empresa/busqueda",
-        icon: <FiShield />,
+        label: "Consultoría Tecnológica",
+        href: "/servicios/consultoria-tecnologica",
+        icon: <FiMonitor />,
       },
       {
-        label: "Auditoría de Inclusión",
-        href: "/empresa/auditoria",
-        icon: <FiUserCheck />,
+        label: "Consultoría Financiera y Bursátil",
+        href: "/servicios/consultoria-financiera",
+        icon: <FaMoneyBillWave />,
+      },
+      {
+        label: "Comercio e Importación/Exportación",
+        href: "/servicios/comercio-importacion",
+        icon: <FiShoppingCart />,
+      },
+      {
+        label: "Curso de Alemán",
+        href: "/servicios/curso-aleman",
+        icon: <MdOutlineSchool />,
       },
     ],
   },
   {
-    label: "Candidatos",
-    href: "/candidatos",
-    icon: <FiBriefcase />,
-    title: "Oportunidades para Candidatos",
-    description:
-      "Le apoyamos en su camino hacia su carrera. Aproveche nuestras ofertas de empleo, asesoría profesional y recursos digitales.",
+    label: "Eventos y Programas",
+    href: "/eventos-programas",
+    icon: <FiCalendar />,
+    title: "Eventos y Programas Especiales",
+    description: "Organizamos eventos, talleres y programas de intercambio cultural y lingüístico.",
     subItems: [
       {
-        label: "Registre su Curriculum",
-        href: "/candidatos/registre-curriculum",
-        icon: <FiFileText />,
+        label: "Cursos y Congresos",
+        href: "/eventos-programas/cursos-congresos",
+        icon: <FiBookOpen />,
       },
       {
-        label: "Gestión de Carrera Internacional",
-        href: "/candidatos/gestion-internacional",
+        label: "Lanzamientos y Exposiciones",
+        href: "/eventos-programas/lanzamientos-exposiciones",
+        icon: <FiTrendingUp />,
+      },
+      {
+        label: "Programas de Intercambio",
+        href: "/eventos-programas/programas-intercambio",
         icon: <FiGlobe />,
       },
     ],
@@ -85,63 +97,48 @@ export const navItems_Es: NavItem[] = [
     label: "Nosotros",
     href: "/nosotros",
     icon: <FiStar />,
-    title: "Conócenos Mejor",
-    description: "Conozca más sobre nuestra empresa, valores y trayectoria.",
+    title: "Sobre Nosotros",
+    description: "Conoce nuestra historia, misión y valores.",
     subItems: [
       {
-        label: "Quiénes Somos",
-        href: "/nosotros/quienes-somos",
+        label: "Historia y Misión",
+        href: "/nosotros/historia-mision",
+        icon: <FiFileText />,
+      },
+      {
+        label: "Equipo de Trabajo",
+        href: "/nosotros/equipo-trabajo",
         icon: <FiUsers />,
       },
       {
-        label: "Nuestra Filosofía",
-        href: "/nosotros/filosofia",
-        icon: <FiMessageCircle />,
-      },
-    ],
-  },
-  {
-    label: "Otros Servicios",
-    href: "/otros-servicios",
-    icon: <FiSettings />,
-    title: "Servicios Complementarios",
-    description:
-      "Ofrecemos servicios para su desarrollo académico, profesional y personal, incluyendo estudios, trabajo, vivienda, transporte, visados e idiomas.",
-    subItems: [
-      {
-        label: "Estudios - Formación - Prácticas",
-        href: "/otros-servicios/estudio-formacion-practicas",
-        icon: <FiBookOpen />,
-      },
-      {
-        label: "Trabajo - Impuestos",
-        href: "/otros-servicios/trabajo-impuesto",
-        icon: <FiBriefcase />,
-      },
-      {
-        label: "Vivienda - Transporte",
-        href: "/otros-servicios/vivienda-transporte",
-        icon: <FiHome />,
-      },
-      {
-        label: "Visado - Idioma",
-        href: "/otros-servicios/visado-idioma",
-        icon: <FiFlag />,
-      },
-      {
-        label: "Curso de Alemán",
-        href: "/otros-servicios/curso-aleman-peru",
-        icon: <FaLanguage  />,
+        label: "Valores y Certificaciones",
+        href: "/nosotros/valores-certificaciones",
+        icon: <FiCheckCircle />,
       },
     ],
   },
   {
     label: "Contacto",
-    href: "/contactanos",
+    href: "/contacto",
     icon: <FiMail />,
-    title: "¿Listo para dar el siguiente paso?",
-    description:
-      "Contáctanos para resolver tus dudas, agendar una asesoría o iniciar tu proceso de selección. Estamos aquí para ayudarte.",
-    subItems: [],
+    title: "Contáctanos",
+    description: "Estamos disponibles para resolver tus dudas y atender tus consultas.",
+    subItems: [
+      {
+        label: "Formulario de Contacto",
+        href: "/contacto/formulario",
+        icon: <FiFileText />,
+      },
+      {
+        label: "Teléfono y Dirección",
+        href: "/contacto/telefono-direccion",
+        icon: <FiPhone />,
+      },
+      {
+        label: "Redes Sociales y Mapa",
+        href: "/contacto/redes-mapa",
+        icon: <FiGlobe />,
+      },
+    ],
   },
 ];

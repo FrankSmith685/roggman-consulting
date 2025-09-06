@@ -1,6 +1,5 @@
 'use client';
 
-// import Link from 'next/link';
 import { FiArrowRight } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import { usePageTransition } from '@/hooks/useTransitionHooks/pageTransitionProvider';
@@ -12,23 +11,21 @@ import { servicesItemsEs } from './data/ServiceItem_Es';
 
 export default function ServicesGrid() {
   const { navigate } = usePageTransition();
+  const [servicesItemsLocal, setServicesItemsLocal] = useState(servicesItemsDe);
+  const { lenguaje } = useAppState();
 
-   const [servicesItemsLocal,setServicesItemsLocal] = useState(servicesItemsDe);
-  
-    const {lenguaje} = useAppState();
-  
-    useEffect(()=>{
-      if(lenguaje == "es"){
-        setServicesItemsLocal(servicesItemsEs)
-      }else if(lenguaje == "de"){
-        setServicesItemsLocal(servicesItemsDe)
-      }else{
-        setServicesItemsLocal(servicesItemsEn)
-      }
-    },[lenguaje])
+  useEffect(() => {
+    if (lenguaje == 'es') {
+      setServicesItemsLocal(servicesItemsEs);
+    } else if (lenguaje == 'de') {
+      setServicesItemsLocal(servicesItemsDe);
+    } else {
+      setServicesItemsLocal(servicesItemsEn);
+    }
+  }, [lenguaje]);
 
   return (
-    <div className="hover:cursor-pointer w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-px border border-white/10 bg-gradient-to-br from-black/50 to-black/30 text-white backdrop-blur-md rounded-xl overflow-hidden z-30">
+    <div className="hover:cursor-pointer w-full max-w-6xl mx-auto grid p-2 grid-cols-1 sm:grid-cols-2 gap-px border border-white/10 bg-gradient-to-br from-black/50 to-black/30 text-white backdrop-blur-md rounded-xl overflow-hidden z-30">
       {servicesItemsLocal.map((service, idx) => (
         <motion.div
           key={idx}
@@ -36,7 +33,8 @@ export default function ServicesGrid() {
           viewport={{ once: true, amount: 0.5 }}
           whileInView={{ scale: 1.02 }}
           transition={{ duration: 0.3, delay: idx * 0.1 }}
-
+          // 👇 Si es el último elemento en sm+ ocupa las 2 columnas
+          className={idx === servicesItemsLocal.length - 1 ? 'sm:col-span-2' : ''}
         >
           <div
             onClick={() => navigate(service.href)}
@@ -54,7 +52,6 @@ export default function ServicesGrid() {
                 {service.description}
               </p>
             )}
-
           </div>
         </motion.div>
       ))}

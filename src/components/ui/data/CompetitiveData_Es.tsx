@@ -1,3 +1,5 @@
+// data/competitiveData.ts
+
 export interface CompetitiveItem {
   image: string;
   title: string;
@@ -6,44 +8,45 @@ export interface CompetitiveItem {
 export const competitiveDataEs: CompetitiveItem[] = [
   {
     image: "/images/side_info_01.webp",
-    title: "ESTUDIOS",
+    title: "Asesoría y Consultoría",
   },
   {
     image: "/images/side_info_02.webp",
-    title: "FORMACIÓN",
+    title: "Capacitación y Formación",
   },
   {
     image: "/images/side_info_03.webp",
-    title: "PRÁCTICAS",
+    title: "Traducción e Interpretación",
   },
   {
     image: "/images/side_info_04.webp",
-    title: "TRABAJO",
+    title: "Proyectos y Producción",
   },
   {
     image: "/images/side_info_05.webp",
-    title: "IMPUESTOS",
+    title: "Consultoría Tecnológica",
   },
   {
     image: "/images/side_info_06.webp",
-    title: "VIVIENDA",
+    title: "Consultoría Financiera",
   },
   {
-    image: "/images/side_info_10.jpg",
-    title: "TRANSPORTE",
+    image: "/images/side_info_07.webp",
+    title: "Comercio e Importación/Exportación",
   },
   {
     image: "/images/side_info_08.webp",
-    title: "VISADO",
+    title: "Eventos Corporativos",
   },
   {
     image: "/images/side_info_09.webp",
-    title: "IDIOMA",
+    title: "Programas de Intercambio",
   },
   {
-    image: "/images/side_info_11.webp",
-    title: "Curso de Alemán",
+    image: "/images/side_info_10.webp",
+    title: "Cursos y Congresos",
   },
 ];
 
-export const titleCompetitivoEs:string ="Como consultoría de recursos humanos, también podemos ayudarle con lo siguiente";
+export const titleCompetitivoEs: string =
+  "Como consultoría integral, también ofrecemos los siguientes servicios y programas complementarios:";

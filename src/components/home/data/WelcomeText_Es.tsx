@@ -1,9 +1,9 @@
 // data/welcomeData.ts
 export const welcomeDataEs = {
-  imageAlt: "Sandra Roggero Beratung",
+  imageAlt: "Roggman Consulting",
   introParagraphs: [
-    "Contribuimos cada día a que las personas experimenten una profunda satisfacción en su camino profesional y crezcan personalmente.",
-    "Hoy en día, se trata de más que solo 'encontrar' nuevos empleados rápidamente. Se trata de construir equipos de trabajo óptimos, compuestos por una organización estructurada de manera coherente con los objetivos de la empresa."
+    "Roggman Consulting es una firma especializada en gestión de talento y desarrollo organizacional. Nos dedicamos a conectar empresas con profesionales altamente calificados, impulsando el crecimiento y la innovación en cada proyecto.",
+    "Nuestro enfoque combina experiencia, cercanía y soluciones personalizadas para construir equipos sólidos que respondan a las necesidades actuales y futuras del mercado laboral."
   ],
   ctaButton: "Contáctanos",
   highlightMessage:

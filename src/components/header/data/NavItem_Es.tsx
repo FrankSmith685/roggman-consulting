@@ -8,7 +8,6 @@ import {
   FiSettings,
   FiCheckCircle,
   FiStar,
-  FiPhone,
   FiMail,
   FiTrendingUp,
   FiCalendar,
@@ -118,27 +117,17 @@ export const navItems_Es: NavItem[] = [
     ],
   },
   {
-    label: "Contacto",
-    href: "/contacto",
+    label: "Contáctanos",
+    href: "/contactanos",
     icon: <FiMail />,
     title: "Contáctanos",
     description: "Estamos disponibles para resolver tus dudas y atender tus consultas.",
     subItems: [
       {
         label: "Formulario de Contacto",
-        href: "/contacto/formulario",
+        href: "/contactanos",
         icon: <FiFileText />,
-      },
-      {
-        label: "Teléfono y Dirección",
-        href: "/contacto/telefono-direccion",
-        icon: <FiPhone />,
-      },
-      {
-        label: "Redes Sociales y Mapa",
-        href: "/contacto/redes-mapa",
-        icon: <FiGlobe />,
-      },
+      }
     ],
   },
 ];

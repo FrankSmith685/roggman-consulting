@@ -18,7 +18,7 @@ const sectionFade = {
 };
 
 export default function ContactanosOverview() {
-  const [selectedTab, setSelectedTab] = useState<'empresa' | 'solicitante'>('empresa');
+  const [selectedTab, setSelectedTab] = useState<'empresa' | 'solicitante'>('solicitante');
   const [acceptPolicy, setAcceptPolicy] = useState(false);
   const [acceptRights, setAcceptRights] = useState(false);
 
@@ -152,7 +152,7 @@ export default function ContactanosOverview() {
       </motion.section>
 
       {/* Tabs */}
-      <div className="flex justify-center gap-2">
+      {/* <div className="flex justify-center gap-2">
         <CustomButton
           variantType={selectedTab == "empresa" ? 'indigo' : 'indigo-outline'}
           type="button"
@@ -171,7 +171,7 @@ export default function ContactanosOverview() {
         >
           SOY UN SOLICITANTE
         </CustomButton>
-      </div>
+      </div> */}
 
       {/* Formulario */}
       <motion.section

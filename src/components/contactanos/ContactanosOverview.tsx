@@ -18,7 +18,8 @@ const sectionFade = {
 };
 
 export default function ContactanosOverview() {
-  const [selectedTab, setSelectedTab] = useState<'empresa' | 'solicitante'>('solicitante');
+  // const [selectedTab, setSelectedTab] = useState<'empresa' | 'solicitante'>('solicitante');
+  const selectedTab = 'solicitante'
   const [acceptPolicy, setAcceptPolicy] = useState(false);
   const [acceptRights, setAcceptRights] = useState(false);
 
@@ -97,7 +98,16 @@ export default function ContactanosOverview() {
     console.log('Respuesta del servidor:', result);
 
     // Reset formulario
-    if (selectedTab === 'empresa') {
+    if (selectedTab === 'solicitante') {
+      setSolicitanteForm({
+        nombre: '',
+        apellido: '',
+        correo: '',
+        telefono: '',
+        mensaje: '',
+      });
+      setFile(null);
+    } else {
       setEmpresaForm({
         nombre: '',
         apellido: '',
@@ -108,15 +118,6 @@ export default function ContactanosOverview() {
         correo: '',
         mensaje: '',
       });
-    } else {
-      setSolicitanteForm({
-        nombre: '',
-        apellido: '',
-        correo: '',
-        telefono: '',
-        mensaje: '',
-      });
-      setFile(null);
     }
 
     setAcceptPolicy(false);
@@ -181,28 +182,9 @@ export default function ContactanosOverview() {
         variants={sectionFade}
         viewport={{ once: true }}
       >
-        {selectedTab === 'empresa' ? (
+        {selectedTab === 'solicitante' ? (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <CustomInput name="nombre" label="Nombre" value={empresaForm.nombre} onChange={handleChangeEmpresa} required />
-              <CustomInput name="apellido" label="Apellido" value={empresaForm.apellido} onChange={handleChangeEmpresa} required />
-              <CustomInput name="telefono" label="Teléfono" value={empresaForm.telefono} onChange={handleChangeEmpresa} />
-              <CustomInput name="empresa" label="Empresa" value={empresaForm.empresa} onChange={handleChangeEmpresa} />
-              <CustomInput name="ciudad" label="Ciudad" value={empresaForm.ciudad} onChange={handleChangeEmpresa} />
-              <CustomInput name="posicion" label="Posición" value={empresaForm.posicion} onChange={handleChangeEmpresa} />
-            </div>
-            <CustomInput name="correo" label="Correo electrónico" value={empresaForm.correo} onChange={handleChangeEmpresa} required />
-            <CustomInput
-              name="mensaje"
-              label="Mensaje (opcional)"
-              multiline
-              minRows={4}
-              value={empresaForm.mensaje}
-              onChange={handleChangeEmpresa}
-            />
-          </>
-        ) : (
-          <>
+            
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <CustomInput name="nombre" label="Nombre" value={solicitanteForm.nombre} onChange={handleChangeSolicitante} required />
               <CustomInput name="apellido" label="Apellido" value={solicitanteForm.apellido} onChange={handleChangeSolicitante} required />
@@ -221,6 +203,26 @@ export default function ContactanosOverview() {
                 onFileSelect={handleFileSelect}
                 fileName={file?.name}
               />
+          </>
+        ) : (
+          <>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <CustomInput name="nombre" label="Nombre" value={empresaForm.nombre} onChange={handleChangeEmpresa} required />
+              <CustomInput name="apellido" label="Apellido" value={empresaForm.apellido} onChange={handleChangeEmpresa} required />
+              <CustomInput name="telefono" label="Teléfono" value={empresaForm.telefono} onChange={handleChangeEmpresa} />
+              <CustomInput name="empresa" label="Empresa" value={empresaForm.empresa} onChange={handleChangeEmpresa} />
+              <CustomInput name="ciudad" label="Ciudad" value={empresaForm.ciudad} onChange={handleChangeEmpresa} />
+              <CustomInput name="posicion" label="Posición" value={empresaForm.posicion} onChange={handleChangeEmpresa} />
+            </div>
+            <CustomInput name="correo" label="Correo electrónico" value={empresaForm.correo} onChange={handleChangeEmpresa} required />
+            <CustomInput
+              name="mensaje"
+              label="Mensaje (opcional)"
+              multiline
+              minRows={4}
+              value={empresaForm.mensaje}
+              onChange={handleChangeEmpresa}
+            />
           </>
         )}
 

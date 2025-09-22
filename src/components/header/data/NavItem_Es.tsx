@@ -118,14 +118,14 @@ export const navItems_Es: NavItem[] = [
   },
   {
     label: "Contáctanos",
-    href: "/contactanos",
+    href: "/contactos",
     icon: <FiMail />,
     title: "Contáctanos",
     description: "Estamos disponibles para resolver tus dudas y atender tus consultas.",
     subItems: [
       {
         label: "Formulario de Contacto",
-        href: "/contactanos",
+        href: "/contactos",
         icon: <FiFileText />,
       }
     ],
